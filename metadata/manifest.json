@@ -1,0 +1,111 @@
+{
+  "files": [
+    {
+      "bytes": 2470,
+      "path": ".github/workflows/publish-huggingface.yml",
+      "sha256": "24cec65d3ff7898b872b77fec922090d7de64fe9abb66aa8d1f73345252774b6"
+    },
+    {
+      "bytes": 48,
+      "path": ".gitignore",
+      "sha256": "b7cd805d347ec0e264256034964ae79141f3a24a889685a414171df13f3d41c1"
+    },
+    {
+      "bytes": 424,
+      "path": "CHANGELOG.md",
+      "sha256": "c195328c547e5c20266d9a689a9713fc344b710bf46eda78cb1204119f63c61a"
+    },
+    {
+      "bytes": 652,
+      "path": "CITATION.cff",
+      "sha256": "db4885253bc934cbef6ab3ba73a0ad1bca34463440697d723051ef0bd98bd4c2"
+    },
+    {
+      "bytes": 376,
+      "path": "LICENSE.md",
+      "sha256": "3e3e833e06d17d5c9a476b90a686b2ad1296f7e90eafca3ebf45b2638e583058"
+    },
+    {
+      "bytes": 4677,
+      "path": "README.md",
+      "sha256": "805bcd550f27952d09159a6e01bf6e8c4b295cf0abbda78234c893b031b627da"
+    },
+    {
+      "bytes": 515,
+      "path": "data/latest.json",
+      "sha256": "5302318f501d9e44c52ade7e701193bc118692755cc0aec29781b52db7d482d5"
+    },
+    {
+      "bytes": 106969,
+      "path": "data/snapshots/2026-07-05.parquet",
+      "sha256": "7361482200e068969ae539ae78794441f62cc32c047494dda6ffb7aaed3db9e9"
+    },
+    {
+      "bytes": 1676,
+      "path": "metadata/provenance.json",
+      "sha256": "44bb8bd9c75eaca27624ac20bfb8dd1eea167e227a6874d22825abb679943423"
+    },
+    {
+      "bytes": 3516,
+      "path": "methodology/consensus-snapshot-methodology.md",
+      "sha256": "bd7512ea1e9d0047cab5638b78e3a88942398be83c7ea880ec8d0d21670d1e77"
+    },
+    {
+      "bytes": 3071,
+      "path": "reports/quality-report-2026-07-05.md",
+      "sha256": "39815e5d3a4e9060b49551353f4f98812d5fe3caaba7cf6d7cd286b29f42d36e"
+    },
+    {
+      "bytes": 31,
+      "path": "requirements-ci.txt",
+      "sha256": "6072836e80936ed534791ae403da256b0718eb9358e2d234cd1160fb2b35a8f4"
+    },
+    {
+      "bytes": 80,
+      "path": "requirements.txt",
+      "sha256": "17de98b384cf2ada01d03b006997d2847e656578a283a2f1b0440918945b7865"
+    },
+    {
+      "bytes": 3228,
+      "path": "schema/data-dictionary.md",
+      "sha256": "86ef539347489087450528685bd496cc325e7c24c6e0964f0d2327be3b132ce8"
+    },
+    {
+      "bytes": 3086,
+      "path": "schema/dataset-schema.json",
+      "sha256": "24475cf81e8a5856f8c062febc9178e460e76d19b239ae6b4efbad54be7ff866"
+    },
+    {
+      "bytes": 1454,
+      "path": "scripts/audit_missing_assets.sql",
+      "sha256": "d5428a37ace7dc33c670ec7c86e25a3e210f61efec4cd053693109288f384169"
+    },
+    {
+      "bytes": 1256,
+      "path": "scripts/build_manifest.py",
+      "sha256": "e68f16c04a3057a681117e9a8525e24b4674ff27b77707364e7caadd4a810b39"
+    },
+    {
+      "bytes": 1596,
+      "path": "scripts/check_material_change.py",
+      "sha256": "c20fb7495a788f592796d29c18d4fe2d64327fe12a013722bcf03fd2534a71e1"
+    },
+    {
+      "bytes": 4961,
+      "path": "scripts/export_snapshot.py",
+      "sha256": "6ae8f27292eb03f95f54076cdc4611f426b56354285e317e20c79f720524aa82"
+    },
+    {
+      "bytes": 3151,
+      "path": "scripts/export_snapshot.sql",
+      "sha256": "fd180fe9413df96a9a128559b7d04e5d0819950e08ac4e4be8c5b3809279fdfa"
+    },
+    {
+      "bytes": 4986,
+      "path": "scripts/validate_snapshot.py",
+      "sha256": "7b97a4d7fbe5f22b16ddf92e81a21b8314bf332ef6d1d86f15c8f701482ce013"
+    }
+  ],
+  "manifest_version": "1.0.0",
+  "snapshot_id": "ipulse-consensus-batch6-2026-07-05-v2.5"
+}

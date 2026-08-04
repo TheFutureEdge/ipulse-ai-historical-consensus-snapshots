@@ -1,0 +1,43 @@
+{
+  "snapshot_id": "ipulse-consensus-batch6-2026-07-05-v2.5",
+  "source_project": "data-platform-436809",
+  "source_tables": [
+    "prod__dp_oracle_fincore_prediction_market__analytics.prediction_consensus_scoring",
+    "prod__dp_oracle_fincore_prediction_market__datasets.prediction_status",
+    "prod__dp_oracle_fincore__controls.dim_fincore_market_assets"
+  ],
+  "source_filter": {
+    "scoring_batch": 6,
+    "score_snapshot_kind": "ORIGINAL",
+    "recompute_date": "2026-07-05",
+    "scoring_algorithm_version": "v2.5",
+    "voices_count_mode": "non_adjusted",
+    "horizon_config": ["1y", "5y"]
+  },
+  "grain": "one sealed snapshot x public-safe asset x forecast horizon",
+  "population": "canonical Batch 6 ORIGINAL consensus cohort after the production five-day anchor-window rule",
+  "row_count": 746,
+  "asset_count": 373,
+  "as_of": {
+    "batch_generation_date": "2026-07-05",
+    "forecast_anchor_date_range": ["2026-07-02", "2026-07-05"],
+    "scoring_completed_at_utc_range": [
+      "2026-07-08T21:19:11.351615Z",
+      "2026-07-08T21:19:50.037698Z"
+    ]
+  },
+  "exact_export_sql": "scripts/export_snapshot.sql",
+  "exact_export_program": "scripts/export_snapshot.py",
+  "missing_asset_audit_sql": "scripts/audit_missing_assets.sql",
+  "validation_program": "scripts/validate_snapshot.py",
+  "excluded_payload_classes": [
+    "raw model requests, prompts, and responses",
+    "individual advisor predictions and thesis text",
+    "generated price paths",
+    "provider market-data payloads",
+    "current or live recomputations",
+    "internal identifiers and operational configuration",
+    "credentials and secrets",
+    "BUY/SELL-style signal bands"
+  ]
+}

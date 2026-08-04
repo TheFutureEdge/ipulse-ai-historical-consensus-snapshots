@@ -1,0 +1,68 @@
+name: Manually publish approved Hugging Face snapshot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install validation dependencies
+        run: pip install --requirement requirements-ci.txt
+
+      - name: Validate candidate
+        run: >-
+          python scripts/validate_snapshot.py
+          --expected-rows 746
+          --expected-assets 373
+
+      - name: Check for a material update
+        id: material
+        run: python scripts/check_material_change.py --candidate data/latest.json
+
+      - name: Check explicit snapshot approval
+        id: approval
+        env:
+          APPROVED_SNAPSHOT_ID: ${{ vars.HF_APPROVED_SNAPSHOT_ID }}
+          CANDIDATE_SNAPSHOT_ID: ${{ steps.material.outputs.snapshot_id }}
+        run: |
+          if [ "$APPROVED_SNAPSHOT_ID" = "$CANDIDATE_SNAPSHOT_ID" ]; then
+            echo "approved=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "approved=false" >> "$GITHUB_OUTPUT"
+            echo "Candidate is validated but not approved for publication." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Rebuild checksum manifest
+        if: steps.material.outputs.material_update == 'true' && steps.approval.outputs.approved == 'true'
+        run: python scripts/build_manifest.py
+
+      - name: Install official Hugging Face CLI
+        if: steps.material.outputs.material_update == 'true' && steps.approval.outputs.approved == 'true'
+        run: |
+          curl -LsSf https://hf.co/cli/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Publish approved immutable snapshot
+        if: steps.material.outputs.material_update == 'true' && steps.approval.outputs.approved == 'true'
+        env:
+          HF_OIDC_RESOURCE: datasets/future-edge-group/ipulse-ai-historical-consensus-snapshots
+        run: >-
+          hf upload future-edge-group/ipulse-ai-historical-consensus-snapshots
+          . . --repo-type dataset
+          --commit-message "Publish ${{ steps.material.outputs.snapshot_id }}"
+
+      - name: Stop if this snapshot is already published
+        if: steps.material.outputs.material_update != 'true'
+        run: echo "This exact snapshot is already published; nothing changed." >> "$GITHUB_STEP_SUMMARY"

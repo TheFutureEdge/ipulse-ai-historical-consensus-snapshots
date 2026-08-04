@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using this metadata."
+title: "iPulse AI Historical Consensus Snapshots"
+type: dataset
+authors:
+  - family-names: Ramdowar
+    given-names: Russlan
+    affiliation: Future Edge Group FZE
+version: 1.0.0
+date-released: 2026-08-04
+license: CC-BY-4.0
+repository-code: "https://github.com/TheFutureEdge/ipulse-ai-historical-consensus-snapshots"
+url: "https://huggingface.co/datasets/future-edge-group/ipulse-ai-historical-consensus-snapshots"
+keywords:
+  - agentic investment research
+  - financial forecasting
+  - consensus forecasts
+  - artificial intelligence
+  - reproducible research

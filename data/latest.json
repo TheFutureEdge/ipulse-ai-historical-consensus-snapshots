@@ -1,0 +1,17 @@
+{
+  "asset_count": 373,
+  "batch_id": 6,
+  "data_path": "data/snapshots/2026-07-05.parquet",
+  "data_sha256": "7361482200e068969ae539ae78794441f62cc32c047494dda6ffb7aaed3db9e9",
+  "dataset_schema_version": "1.0.0",
+  "evaluation_methodology_version": "not_applicable_not_evaluated",
+  "horizons": [
+    "1y",
+    "5y"
+  ],
+  "public_methodology_version": "v7.4",
+  "row_count": 746,
+  "snapshot_date": "2026-07-05",
+  "snapshot_id": "ipulse-consensus-batch6-2026-07-05-v2.5",
+  "source_algorithm_version": "v2.5"
+}
