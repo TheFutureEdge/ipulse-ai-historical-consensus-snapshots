@@ -1,0 +1,6 @@
+# Optional dependencies for the public tutorial; independent of export/CI dependencies.
+pandas>=2.2,<3
+pyarrow>=17,<24
+matplotlib>=3.8,<4
+jupyter>=1.1,<2
+ipykernel>=6.29,<8

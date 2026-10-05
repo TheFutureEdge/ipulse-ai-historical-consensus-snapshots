@@ -11,9 +11,9 @@
       "sha256": "b7cd805d347ec0e264256034964ae79141f3a24a889685a414171df13f3d41c1"
     },
     {
-      "bytes": 424,
+      "bytes": 899,
       "path": "CHANGELOG.md",
-      "sha256": "c195328c547e5c20266d9a689a9713fc344b710bf46eda78cb1204119f63c61a"
+      "sha256": "13e89d073d76cb28ae86cb4d79d0d211b2f6b1eb36418a7f7a242e5ae45f3b42"
     },
     {
       "bytes": 652,
@@ -26,9 +26,9 @@
       "sha256": "3e3e833e06d17d5c9a476b90a686b2ad1296f7e90eafca3ebf45b2638e583058"
     },
     {
-      "bytes": 4677,
+      "bytes": 5684,
       "path": "README.md",
-      "sha256": "805bcd550f27952d09159a6e01bf6e8c4b295cf0abbda78234c893b031b627da"
+      "sha256": "62c67c8eec1529fe2366a878e73b8cdc7c818093a1317dbaae93c3ee520be1d2"
     },
     {
       "bytes": 515,
@@ -51,6 +51,11 @@
       "sha256": "bd7512ea1e9d0047cab5638b78e3a88942398be83c7ea880ec8d0d21670d1e77"
     },
     {
+      "bytes": 152563,
+      "path": "notebooks/01_compare_forecast_horizons.ipynb",
+      "sha256": "963200701a9986cb0161f05ad00e92704e4853beea5acea639d129719825805d"
+    },
+    {
       "bytes": 3071,
       "path": "reports/quality-report-2026-07-05.md",
       "sha256": "39815e5d3a4e9060b49551353f4f98812d5fe3caaba7cf6d7cd286b29f42d36e"
@@ -59,6 +64,11 @@
       "bytes": 31,
       "path": "requirements-ci.txt",
       "sha256": "6072836e80936ed534791ae403da256b0718eb9358e2d234cd1160fb2b35a8f4"
+    },
+    {
+      "bytes": 173,
+      "path": "requirements-notebooks.txt",
+      "sha256": "4305795c9a4768a140e9ce2a8a95419f6f47ecf3a5b5012789070a2d1bf5bcc4"
     },
     {
       "bytes": 80,

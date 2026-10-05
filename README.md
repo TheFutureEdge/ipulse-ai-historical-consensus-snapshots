@@ -61,6 +61,15 @@ This is a cohort-freshness exclusion, not an accuracy or performance decision.
 - `metadata/`: provenance and checksum manifest
 - `reports/`: release-specific data-quality reports
 - `scripts/`: exact export and validation logic
+- `notebooks/`: executed tutorials using pinned public releases
+
+## Try the dataset
+
+Start with [How forecast horizon changes a consensus score](notebooks/01_compare_forecast_horizons.ipynb). The executed notebook loads the exact public Parquet release, verifies its SHA-256, matches all 373 assets across horizons, and visualizes consensus-score signs and forecast disagreement.
+
+In Batch 6, 115 of 373 assets (30.8%) have strictly opposite consensus-score signs between the one-year and five-year horizons. This is a comparison of historical model outputs, not evidence of accuracy or realized investment returns. The notebook includes the calculations, full sign-transition counts, availability checks, and metric interpretation.
+
+For advisor-level research, see the separate [iPulse AI Batch 5 Advisor Forecast Panel](https://huggingface.co/datasets/future-edge-group/ipulse-ai-batch5-advisor-forecast-panel). It has a different cohort and methodology; do not treat the two releases as interchangeable.
 
 ## Known limitations
 
