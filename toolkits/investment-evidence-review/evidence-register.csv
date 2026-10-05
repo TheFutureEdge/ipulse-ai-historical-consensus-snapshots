@@ -1,0 +1,1 @@
+evidence_id,claim_id,issuer_or_asset_id,source_url,source_type,reporting_period_start,reporting_period_end,source_published_at_utc,retrieved_at_utc,decision_cutoff_utc,source_sha256,original_excerpt_or_field,reviewer,availability_check,limitations

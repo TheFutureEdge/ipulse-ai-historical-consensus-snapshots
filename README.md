@@ -71,6 +71,19 @@ In Batch 6, 115 of 373 assets (30.8%) have strictly opposite consensus-score sig
 
 For advisor-level research, see the separate [iPulse AI Batch 5 Advisor Forecast Panel](https://huggingface.co/datasets/future-edge-group/ipulse-ai-batch5-advisor-forecast-panel). It has a different cohort and methodology; do not treat the two releases as interchangeable.
 
+## Investment evidence review companion
+
+[Are archived forecasts ready for evaluation?](notebooks/02_forecast_evaluation_readiness.ipynb)
+adds an executed readiness audit: complete horizon pairs, maturity at a fixed
+date, information-cutoff limitations and a hypothetical compounding control.
+The [public Kaggle edition](https://www.kaggle.com/code/russlan/are-archived-forecasts-ready-for-evaluation)
+completed a fresh free-CPU run. This is distinct from the horizon-score tutorial.
+
+The [investment evidence review toolkit](toolkits/investment-evidence-review/README.md)
+contains reusable worksheets for source availability, cash-flow reconciliation,
+valuation assumptions, thesis invalidation and forecast-outcome evaluation.
+These are review templates, not a performance claim or investment recommendation.
+
 ## Known limitations
 
 - The snapshot is heavily weighted toward equities: 347 of 373 assets.

@@ -1,0 +1,1 @@
+claim_id,issuer_id,thesis_claim,supporting_evidence_ids,contradicting_evidence_ids,measurable_invalidation_test,threshold_and_units,test_date_or_trigger,decision_cutoff_utc,state,reviewer,revision_reason

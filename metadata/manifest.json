@@ -21,14 +21,19 @@
       "sha256": "db4885253bc934cbef6ab3ba73a0ad1bca34463440697d723051ef0bd98bd4c2"
     },
     {
-      "bytes": 376,
+      "bytes": 581,
       "path": "LICENSE.md",
-      "sha256": "3e3e833e06d17d5c9a476b90a686b2ad1296f7e90eafca3ebf45b2638e583058"
+      "sha256": "2b152bf7cfc64c0b33eb0958972ee75d815ca54cb771fb0b26e627007f7fed4c"
     },
     {
-      "bytes": 6599,
+      "bytes": 11358,
+      "path": "LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 7411,
       "path": "README.md",
-      "sha256": "f44bed56de7b7cdba7325b678e57eb67fc8bd80ffd9657a35495e2f3b5b344ff"
+      "sha256": "bccd032a31530345a32e2a882990959fffa9a7ee7b938c8f78b2d9c9d003bf5a"
     },
     {
       "bytes": 515,
@@ -54,6 +59,11 @@
       "bytes": 152563,
       "path": "notebooks/01_compare_forecast_horizons.ipynb",
       "sha256": "963200701a9986cb0161f05ad00e92704e4853beea5acea639d129719825805d"
+    },
+    {
+      "bytes": 91181,
+      "path": "notebooks/02_forecast_evaluation_readiness.ipynb",
+      "sha256": "caa5af78da8f19c432ab69dc8cb6714eeffb23dac32a21e16a1dcb9f03357110"
     },
     {
       "bytes": 3071,
@@ -114,6 +124,36 @@
       "bytes": 4986,
       "path": "scripts/validate_snapshot.py",
       "sha256": "7b97a4d7fbe5f22b16ddf92e81a21b8314bf332ef6d1d86f15c8f701482ce013"
+    },
+    {
+      "bytes": 4767,
+      "path": "toolkits/investment-evidence-review/README.md",
+      "sha256": "1d447f475d71ac58dda64a45853b63e8c914fda118e217d0a5b39acf7db4b68f"
+    },
+    {
+      "bytes": 331,
+      "path": "toolkits/investment-evidence-review/cash-flow-reconciliation.csv",
+      "sha256": "056277a9d8756ee3db83909f24fa200d43ee565dc1e2ede27eb5afd80fc2d1da"
+    },
+    {
+      "bytes": 248,
+      "path": "toolkits/investment-evidence-review/evidence-register.csv",
+      "sha256": "616ad4ff70fc25ffb7c2ae692ffbdc9b9485b477ce74d5830ac8a398100aa6d8"
+    },
+    {
+      "bytes": 303,
+      "path": "toolkits/investment-evidence-review/forecast-outcome-review.csv",
+      "sha256": "dcf516f131a0459ef15db6be4745dca2ebf250d681f11ab7c95f965a3e6a37f2"
+    },
+    {
+      "bytes": 204,
+      "path": "toolkits/investment-evidence-review/thesis-invalidation.csv",
+      "sha256": "4cb8e602888aeceb89ec613308d34b25ab007fdb50e00f04a4f47ec60e8e6cc8"
+    },
+    {
+      "bytes": 203,
+      "path": "toolkits/investment-evidence-review/valuation-assumptions.csv",
+      "sha256": "88c38009785884838fa7ac0df7cee537abb16813e4a24f3ed386eae122f6ba40"
     }
   ],
   "manifest_version": "1.0.0",
