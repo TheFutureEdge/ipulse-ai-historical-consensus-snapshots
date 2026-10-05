@@ -86,6 +86,13 @@ The exact BigQuery sources, filters, SQL, field allowlist, row-level checksums, 
 
 See [the methodology](methodology/consensus-snapshot-methodology.md), [data dictionary](schema/data-dictionary.md), and [quality report](reports/quality-report-2026-07-05.md).
 
+## Research use and reading guide
+
+Use this archive to inspect forecast metadata, horizon definitions, cohort selection and reproducibility before designing an evaluation. A populated provenance field or matching checksum establishes neither forecast accuracy nor realized performance.
+
+- [Audit your AI forecast dataset before calling it a benchmark](https://dev.to/futureedgegroup/audit-your-ai-forecast-dataset-before-calling-it-a-benchmark-29f) walks through six metadata checks on this 746-record snapshot and explains why all records remain unevaluated.
+- [Comparing annual and cumulative forecast returns](https://ipulseai.com/concepts/how-to-compare-ai-stock-forecasts-cagr-and-total-return) explains the aggregation problem with reproducible examples. Its separate 766-equity-record cohort is not this 746-record dataset; do not transfer its counts or diagnostics to this release.
+
 ## License and citation
 
 The public dataset package is licensed under CC BY 4.0. Attribution should identify **iPulse AI** and **Future Edge Group FZE** and include the immutable `snapshot_id` and data checksum.
@@ -96,6 +103,6 @@ Suggested citation:
 
 ## Contact
 
-Product: **iPulse AI**  
+Product: [**iPulse AI**](https://ipulseai.com)  
 Organization: **Future Edge Group FZE**  
 Founder: **Russlan Ramdowar**
